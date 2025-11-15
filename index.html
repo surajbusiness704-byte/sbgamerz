@@ -1,19 +1,92 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SB GAMERZ – Official Download</title>
+  <meta charset="utf-8" />
+  <title>SB GAMERZ – Official Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="SB GAMERZ official website. Play Free Fire tournaments directly in browser or download the SB Gamerz Android app." />
+  <style>
+    body{
+      margin:0;
+      font-family:system-ui, Arial, sans-serif;
+      background:#020617;
+      color:#e5e7eb;
+      display:flex;
+      min-height:100vh;
+      justify-content:center;
+      align-items:center;
+    }
+    .wrap{
+      max-width:480px;
+      padding:24px;
+      text-align:center;
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:26px;
+    }
+    p{
+      margin:6px 0;
+      color:#9ca3af;
+      font-size:14px;
+    }
+    .buttons{
+      margin-top:20px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .btn{
+      display:block;
+      padding:12px 18px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:15px;
+    }
+    .primary{
+      background:#22c55e;
+      color:#022c22;
+    }
+    .secondary{
+      background:#111827;
+      color:#e5e7eb;
+      border:1px solid #374151;
+    }
+    .note{
+      margin-top:16px;
+      font-size:12px;
+      color:#6b7280;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:Arial;">
-    <h1>Welcome to SB GAMERZ</h1>
-    <p>Download the official SB GAMERZ APK below:</p>
+<body>
+  <div class="wrap">
+    <h1>SB GAMERZ – Official</h1>
+    <p>Yahan se aap <strong>direct browser mein tournament panel open</strong> kar sakte hain,</p>
+    <p>ya phir SB Gamerz ka Android app download kar sakte hain.</p>
 
-    <a href="base.apk" download>
-        <button style="padding:15px 25px; font-size:20px; background:#0084ff; color:white; border:none; border-radius:8px;">
-            Download SB Gamerz APK
-        </button>
-    </a>
+    <div class="buttons">
+      <!-- 1) WEB VERSION (no download) -->
+      <a class="btn primary"
+         href="https://clients.tourna.xyz/sbgamerz/"
+         target="_blank">
+        Open SB GAMERZ Web Version
+      </a>
 
-    <p style="margin-top:20px;">© 2025 SB Gamerz</p>
+      <!-- 2) ANDROID APP DOWNLOAD (GitHub se base.apk) -->
+      <a class="btn secondary"
+         href="base.apk"
+         download>
+        Download SB GAMERZ Android App
+      </a>
+    </div>
+
+    <p class="note">
+      Web version mobile browser mein bhi chalega (Chrome / Opera / UC).  
+      App optional hai – sirf unke liye jo shortcut chahte hain.
+    </p>
+  </div>
 </body>
 </html>
